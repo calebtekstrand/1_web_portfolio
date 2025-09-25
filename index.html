@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Caleb E</a>
+        <nav>
+            <a target="_blank" href="https://github.com/calebtekstrand"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/caleb-ekstrand-644695174/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Caleb...</h1>
+                <p>Software Developer</p>
+
+            </div>
+            <h5 class="intro-description">
+                An aspiring software developer with 
+                backgrounds in project management, music, 
+                and creative writing. Based in Asheville, NC, USA. 
+                I love to read, play video games, and build fun internet applications!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:calebtekstrand@gmail.com"> Email me</a>
+                <a target="_blank" href="https://github.com/calebtekstrand">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/caleb-ekstrand-644695174/">LinkedIn</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | NextJS | NodeJS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Basic scripting</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>FantaCSS | Firebase | AWS | Stripe | GIT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Lastest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>Sep 5, 2025</p>
+                        <h4>Brogram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                        <p>The Simple 30 Workouts Training Plan</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://brogram-get-strong.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/calebtekstrand/2_brogram/tree/main">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/Brogram.png" alt="calebtekstrand-thumbnail"/>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <p>Sep 18, 2025</p>
+                        <h4>CalebStore</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS/p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p>A super cool store for programmers and productivity fiends.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://master.did0rixh3bhiv.amplifyapp.com/">Live</a>
+                            <a target="_blank" href="https://github.com/calebtekstrand/3_calebstore">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/calebstore.png" alt="calebtekstrand-thumbnail"/>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <p>Aug 25, 2025</p>
+                        <h4>SubTrack | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Track all your subscription analytics!</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://sub-track-caleb.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/calebtekstrand/4_subtrack/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/1_web_portfolio/public/subtrack.png" alt="calebtekstrand-thumbnail"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a target="_blank" href="https://www.calebtekstrand.com">Caleb Ekstrand</a> ⭐ the repo on <a target="_blank" href="">Github</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for our little color switching game
+        // 1. Select all the html elements so that we can later manipulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the functions
+        function playGame() {
+            // enables play of the game by showing the color selector
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // take the selected color and assign it to the background color 
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3. assign the functions to the buttons by adding the function call to the actual elements
+
+    </script>
+</body>
+</html>
